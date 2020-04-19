@@ -28,3 +28,8 @@ function submitData(userName, userEmail){
         createElementAndAppendToBody(error.message);
     })
 }
+function createElementAndAppendToBody(innerHTML){
+    let newNode = document.createElement('p');
+    newNode.innerHTML = innerHTML;
+    document.querySelector("body").appendChild(newNode);
+}
